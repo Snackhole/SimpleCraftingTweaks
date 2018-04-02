@@ -1,11 +1,14 @@
 package com.snackhole.simplecraftingtweaks;
 
 import com.snackhole.simplecraftingtweaks.proxy.IProxy;
+import net.minecraftforge.event.AnvilUpdateEvent;
+import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = SimpleCraftingTweaksMain.MODID, version = SimpleCraftingTweaksMain.VERSION)
 public class SimpleCraftingTweaksMain {
@@ -33,5 +36,19 @@ public class SimpleCraftingTweaksMain {
 
     public SimpleCraftingTweaksMain() {
         simpleCraftingTweaksMainInstance = this;
+    }
+
+    @Mod.EventBusSubscriber
+    public static class AnvilRepairHandler {
+        @SubscribeEvent
+        public static void anvilUpdateEvent(AnvilUpdateEvent event) {
+            event.getLeft().setRepairCost(0);
+            event.getRight().setRepairCost(0);
+        }
+
+        @SubscribeEvent
+        public static void anvilRepairEvent(AnvilRepairEvent event) {
+            event.getItemResult().setRepairCost(0);
+        }
     }
 }

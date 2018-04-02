@@ -1,0 +1,16 @@
+[
+{
+  "modid": "simplecraftingtweaks",
+  "name": "Simple Crafting Tweaks",
+  "description": "Simple crafting tweaks designed to extend or alter existing Minecraft mechanics.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Snackhole"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

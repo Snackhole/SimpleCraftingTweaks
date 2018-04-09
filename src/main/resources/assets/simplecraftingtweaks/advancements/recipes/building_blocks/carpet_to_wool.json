@@ -1,0 +1,163 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "simplecraftingtweaks:black_carpet_to_wool",
+      "simplecraftingtweaks:blue_carpet_to_wool",
+      "simplecraftingtweaks:brown_carpet_to_wool",
+      "simplecraftingtweaks:cyan_carpet_to_wool",
+      "simplecraftingtweaks:gray_carpet_to_wool",
+      "simplecraftingtweaks:green_carpet_to_wool",
+      "simplecraftingtweaks:light_blue_carpet_to_wool",
+      "simplecraftingtweaks:light_gray_carpet_to_wool",
+      "simplecraftingtweaks:lime_carpet_to_wool",
+      "simplecraftingtweaks:magenta_carpet_to_wool",
+      "simplecraftingtweaks:orange_carpet_to_wool",
+      "simplecraftingtweaks:pink_carpet_to_wool",
+      "simplecraftingtweaks:purple_carpet_to_wool",
+      "simplecraftingtweaks:red_carpet_to_wool",
+      "simplecraftingtweaks:white_carpet_to_wool",
+      "simplecraftingtweaks:yellow_carpet_to_wool"
+    ]
+  },
+  "criteria": {
+    "has_the_recipe1": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:black_carpet_to_wool"
+      }
+    },
+    "has_the_recipe2": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:blue_carpet_to_wool"
+      }
+    },
+    "has_the_recipe3": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:brown_carpet_to_wool"
+      }
+    },
+    "has_the_recipe4": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:cyan_carpet_to_wool"
+      }
+    },
+    "has_the_recipe5": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:gray_carpet_to_wool"
+      }
+    },
+    "has_the_recipe6": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:green_carpet_to_wool"
+      }
+    },
+    "has_the_recipe7": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:light_blue_carpet_to_wool"
+      }
+    },
+    "has_the_recipe8": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:light_gray_carpet_to_wool"
+      }
+    },
+    "has_the_recipe9": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:lime_carpet_to_wool"
+      }
+    },
+    "has_the_recipe10": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:magenta_carpet_to_wool"
+      }
+    },
+    "has_the_recipe11": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:orange_carpet_to_wool"
+      }
+    },
+    "has_the_recipe12": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:pink_carpet_to_wool"
+      }
+    },
+    "has_the_recipe13": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:purple_carpet_to_wool"
+      }
+    },
+    "has_the_recipe14": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:red_carpet_to_wool"
+      }
+    },
+    "has_the_recipe15": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:white_carpet_to_wool"
+      }
+    },
+    "has_the_recipe16": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "simplecraftingtweaks:yellow_carpet_to_wool"
+      }
+    },
+    "has_wool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wool"
+          }
+        ]
+      }
+    },
+    "has_carpet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:carpet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe1",
+      "has_the_recipe2",
+      "has_the_recipe3",
+      "has_the_recipe4",
+      "has_the_recipe5",
+      "has_the_recipe6",
+      "has_the_recipe7",
+      "has_the_recipe8",
+      "has_the_recipe9",
+      "has_the_recipe10",
+      "has_the_recipe11",
+      "has_the_recipe12",
+      "has_the_recipe13",
+      "has_the_recipe14",
+      "has_the_recipe15",
+      "has_the_recipe16",
+      "has_wool",
+      "has_carpet"
+    ]
+  ]
+}

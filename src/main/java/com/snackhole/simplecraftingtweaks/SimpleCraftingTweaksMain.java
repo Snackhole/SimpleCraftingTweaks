@@ -1,6 +1,7 @@
 package com.snackhole.simplecraftingtweaks;
 
 import com.snackhole.simplecraftingtweaks.proxy.IProxy;
+import com.snackhole.simplecraftingtweaks.recipe.ModRecipes;
 import net.minecraftforge.event.AnvilUpdateEvent;
 import net.minecraftforge.event.entity.player.AnvilRepairEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -13,7 +14,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod(modid = SimpleCraftingTweaksMain.MODID, version = SimpleCraftingTweaksMain.VERSION)
 public class SimpleCraftingTweaksMain {
     public static final String MODID = "simplecraftingtweaks";
-    public static final String VERSION = "1";
+    public static final String VERSION = "2";
     @SidedProxy(clientSide = "com.snackhole.simplecraftingtweaks.proxy.ClientProxy", serverSide = "com.snackhole.simplecraftingtweaks.proxy.ServerProxy")
     public static IProxy proxy;
     @Mod.Instance
@@ -26,6 +27,7 @@ public class SimpleCraftingTweaksMain {
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        ModRecipes.init();
         proxy.init(event);
     }
 

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wool",
+  "pattern": [
+    "C",
+    "C",
+    "C"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:carpet",
+      "data": 14
+    }
+  },
+  "result": {
+    "item": "minecraft:wool",
+    "data": 14,
+    "count": 2
+  }
+}
